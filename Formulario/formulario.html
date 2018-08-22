@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de animales </title>
+    <style >
+
+      input{
+
+        margin: 20px 0 0;
+        color: brown;
+      }
+      body{
+        background: #2DB1BF;
+      }
+    </style>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript" >
+    </script>
+  </head>
+  <body>
+    <form name="form" action="index.html" method="post">
+      <h1>Animales Favoritos: </h1>
+      <label for="">1.- Los Koalas Son: </label>
+      <input id="osos" type="checkbox" name="clas" onclick=check(this.value) value="False">Osos
+      <input id="marsupiales" type="checkbox" name="clas" onclick=check(this.value) value="True">Marsupiales<br><br>
+
+      <label for="">2.- Los Koalas Tienen: </label>
+      <input id="pelaje" type="checkbox" name="clas" onclick=check(this.value) value="True">Pelaje muy grueso
+      <input id="Plumas" type="checkbox" name="clas" onclick=check(this.value) value="False">Plumas<br><br>
+
+      <label for="">3.- Los Koalas Se Encuentran En Peligro De Extinsiòn: </label>
+      <input id="Si" type="checkbox" name="clas" onclick=check(this.value) value="True">Si
+      <input id="No" type="checkbox" name="clas" onclick=check(this.value) value="False" >No<hr><br>
+
+      <label for="">4.- El Panda Gigante Es:</label>
+      <input id="panda" type="checkbox" name="clas" onclick=check(this.value) value="False">Ovìparo
+      <input id="oso" type="checkbox" name="clas" onclick=check(this.value) value="True">Mamifero <br><br>
+
+      <label for="">5.- El Panda Gigante Vive En Mandas:</label>
+      <input id="Si" type="checkbox" name="clas" onclick=check(this.value) value="True">Si
+      <input id="No" type="checkbox" name="clas" onclick=check(this.value) value="False">No <br><br>
+
+      <label for="">6.- El Panda Gigante Se Encuentran En Peligro De Extinsiòn :</label>
+      <input id="Si" type="checkbox" name="clas" onclick=check(this.value) value="True">Si
+      <input id="No" type="checkbox" name="clas" onclick=check(this.value) value="False">No</label> <br><br>
+      <p></p>
+
+      <label for="">Respuesta:</label>
+      <input type="text" name="Respuesta" size="20">
+
+
+      <script type="text/javascript">
+
+
+
+        function check(clas){
+          document.form.Respuesta.value=clas;
+        }
+      </script>
+
+    </form>
+  </body>
+</html>

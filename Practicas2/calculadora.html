@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <script type="text/javascript"/>
+    alert("Realiza Tu Operación"); //el alert genera un mensaje
+    function calcular(operacion){ //realiza la funcion de las operaciones
+      var numero1 = document.calc.numero1.value // var numero1 y var numero2 son contienes los valores para realizar las operaciones
+      var numero2 = document.calc.numero2.value
+      var result = eval(numero1 + operacion + numero2) //produce el resultado entre las variables numero1 y numero2
+      document.calc.resultado.value = result //escribe el resultado en la caja asignada
+    }
+    </script>
+  </head>
+  <body>
+  <form name="calc" class="" action="index.html" method="post"> <!--crea el formulario-->
+    <h1>Calculadora</h1> <br> <!--genera un titulo mas grande-->
+
+    <input type="Text" name="numero1" value="0" size="12">
+    <br>
+    <input type="Text" name="numero2" value="0" size="12">
+    <!--Crea las cajas para introducir los valores de las variables numero1 y numero2-->
+    <br>
+    <input type="Button" name="" value=" + " onclick="calcular('+')">
+    <br>
+    <input type="Button" name="" value=" - " onclick="calcular('-')">
+    <br>
+    <input type="Button" name="" value=" X " onclick="calcular('*')">
+    <br>
+    <input type="Button" name="" value=" / " onclick="calcular('/')">
+    <!--Crea los botones para realizar las operaciones ya sea suma, resta, division, multiplicacion y crear el resultado entre las variables numero1 y numero2-->
+    <br>
+    <input type="Text" name="resultado" value="0" size="12"> <!--Crea la caja para generar el resultado entre las variables numro1 y numero2-->
+  </form>
+  </body>
+</html>
